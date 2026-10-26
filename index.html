@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="A hands-on jQuery lab covering selectors, effects, DOM manipulation, animation, and an image gallery project.">
+  <title>jQuery Lab — Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="jQuery Lab home"><span class="brand-mark">jq</span><span>jQuery <b>Lab</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Overview</a><a href="basics.html">01 Basics</a><a href="effects.html">02 Effects</a><a href="dom.html">03 DOM</a><a href="animations.html">04 Motion</a><a href="project.html">05 Project</a>
+    </nav>
+    <span class="header-note">FRONTEND · A6</span>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> INTERACTIVE COURSEWORK <span class="eyebrow-line"></span> 2026</p><h1>Make the page<br><em>come alive.</em></h1><p class="hero-lede">A practical jQuery field guide. Learn the essentials by changing real elements, triggering effects, and building a tiny image gallery.</p><a class="button button-dark" href="basics.html">Start with the basics <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-art" aria-label="Illustration of a webpage with an interactive cursor" role="img"><div class="art-label">THE DOM / IN MOTION</div><div class="browser-card"><div class="browser-top"><i></i><i></i><i></i><span>your-page.html</span></div><div class="browser-body"><div class="art-sidebar"><b></b><b></b><b></b><b></b></div><div class="art-content"><div class="art-heading"></div><div class="art-line"></div><div class="art-line short"></div><div class="art-button">click me</div><div class="art-tile"><span class="tile-shape"></span><span class="tile-shape second"></span></div></div></div><div class="cursor-shape" aria-hidden="true">↖</div><div class="float-tag tag-one">.fadeIn()</div><div class="float-tag tag-two">$(selector)</div></div>
+    </section>
+    <section class="overview wrap" aria-labelledby="roadmap-heading"><div class="section-heading"><div><p class="eyebrow">THE ROADMAP</p><h2 id="roadmap-heading">Five stops. One toolkit.</h2></div><p>Each section has a working demo and a short code example. Try the controls, then inspect what changes.</p></div>
+      <div class="path-list">
+        <a class="path-card path-basics" href="basics.html"><span class="path-number">01</span><div class="path-copy"><h3>Get the basics</h3><p>Selectors, content, and styles</p></div><span class="path-method">.text() · .css()</span><span class="path-arrow" aria-hidden="true">↗</span></a>
+        <a class="path-card path-effects" href="effects.html"><span class="path-number">02</span><div class="path-copy"><h3>Play with effects</h3><p>Hide, fade, and slide</p></div><span class="path-method">.fadeToggle()</span><span class="path-arrow" aria-hidden="true">↗</span></a>
+        <a class="path-card path-dom" href="dom.html"><span class="path-number">03</span><div class="path-copy"><h3>Shape the DOM</h3><p>Add, update, and listen</p></div><span class="path-method">.append() · .val()</span><span class="path-arrow" aria-hidden="true">↗</span></a>
+        <a class="path-card path-motion" href="animations.html"><span class="path-number">04</span><div class="path-copy"><h3>Move with purpose</h3><p>Single and queued animations</p></div><span class="path-method">.animate()</span><span class="path-arrow" aria-hidden="true">↗</span></a>
+        <a class="path-card path-project" href="project.html"><span class="path-number">05</span><div class="path-copy"><h3>Build a mini project</h3><p>An interactive image gallery</p></div><span class="path-method">PUT IT TOGETHER</span><span class="path-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="index.html"><span class="brand-mark">jq</span><span>jQuery <b>Lab</b></span></a><span>Assignment 6 · Frontend Development</span><a href="https://api.jquery.com/" target="_blank" rel="noreferrer">jQuery API ↗</a></footer>
+</body>
+</html>
